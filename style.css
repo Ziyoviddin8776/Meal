@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0.1rem;
+}
+:root {
+  --color-orange: orangered;
+  --color-white: white;
+  --color-back: #f0f0f0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--color-back);
+}
+
+.window {
+  width: 100%;
+  margin: 2rem 0;
+}
+.header {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}
+.title,
+.searchRezult {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+.informationOur {
+  font-size: 1.6rem;
+  opacity: 0.7;
+  margin: 2rem 0;
+}
+.inputSearch {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  width: 70%;
+  outline: none;
+  border: 1px solid var(--color-orange);
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--color-orange);
+}
+.input::placeholder {
+  color: var(--color-orange);
+}
+.search {
+  border: 1px solid var(--color-orange);
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  background-color: var(--color-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search--icon {
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: var(--color-white);
+}
+.searchRezult {
+  margin: 4rem 0;
+}
+.rezultbegin {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: var(--color-orange);
+}
+.flex {
+  margin: 0 3%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.box {
+  width: 30%;
+  background-color: white;
+  padding-bottom: 3rem;
+  box-shadow: 0rem 0rem 1rem 1rem rgb(214, 206, 206);
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.meal--img {
+  width: 100%;
+}
+.meal--img img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.meal--name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+.recipe--button {
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border-radius: 3rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.general {
+  position: absolute;
+  transform: scale(1);
+  transition: all 2s;
+  display: none;
+}
+.for__modal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  height: 90vh;
+  width: 55vw;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  overflow: auto;
+}
+.delete {
+  display: flex;
+  justify-content: end;
+}
+.fordelete__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: white;
+}
+.delete--icon {
+  font-size: 2rem;
+  color: black;
+}
+.meal__name {
+  font-size: 3rem;
+}
+.name__inputVal {
+  display: flex;
+  justify-content: center;
+}
+.inputVal {
+  padding: 1rem;
+  background-color: var(--color-white);
+  color: var(--color-orange);
+  border-radius: 0.4rem;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.recipe {
+  font-size: 2rem;
+}
+.lorem {
+  margin: 2rem 0;
+  font-size: 1.8rem;
+}
+.watch__video {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+.watch__video a {
+  color: var(--color-white);
+}
+.imgcha {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .box {
+    width: 45%;
+  }
+  .flex {
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .header {
+    width: 90%;
+  }
+  .title,
+  .searchRezult {
+    font-size: 3rem;
+  }
+  .informationOur {
+    font-size: 1.4rem;
+  }
+  .inputSearch {
+    display: flex;
+    justify-content: center;
+  }
+  .input {
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .search--icon {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .rezultbegin {
+    font-size: 3rem;
+  }
+  .modal {
+    height: 90vh;
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .box {
+    width: 45%;
+  }
+  .flex {
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .header {
+    width: 90%;
+  }
+  .title,
+  .searchRezult {
+    font-size: 3rem;
+  }
+  .informationOur {
+    font-size: 1.4rem;
+  }
+  .inputSearch {
+    display: flex;
+    justify-content: center;
+  }
+  .input {
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .search--icon {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .rezultbegin {
+    font-size: 3rem;
+  }
+  .modal {
+    height: 90vh;
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 90%;
+  }
+  .flex {
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .header {
+    width: 90%;
+  }
+  .title,
+  .searchRezult {
+    font-size: 2rem;
+  }
+  .informationOur {
+    font-size: 1.4rem;
+  }
+  .inputSearch {
+    display: flex;
+    justify-content: center;
+  }
+  .input {
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .search--icon {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .rezultbegin {
+    font-size: 3rem;
+  }
+  .modal {
+    height: 100vh;
+    width: 100vw;
+  }
+}
