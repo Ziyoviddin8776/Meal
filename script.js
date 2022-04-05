@@ -50,20 +50,15 @@ let getAPI = function (meal) {
           document.querySelector(".lorem").textContent = obj.strInstructions;
           document.querySelector(".imgcha").src = `${obj.strMealThumb}`;
           document.querySelector(".youtube").href = `${obj.strYoutube}`;
-          if (document.querySelector(".general").style.top == `${k}px`) {
-          }
-          // document.querySelector(".general").style.position = "absolute";
-          // console.log(document.querySelector(".general").style.position);
+          document.querySelector("body").classList.add("body");
+          console.log(k);
         });
-
-        // document.querySelector(".general").style.position = "fixed";
-        // console.log(document.querySelector(".general").style.position);
         document
           .querySelector(".fordelete__icon")
           .addEventListener("click", function () {
             document.querySelector(".general").style.display = "none";
-            document.querySelector(".general").style.position = "absolute";
             document.querySelector(".general").style.transform = "scale(0.3)";
+            document.querySelector("body").classList.remove("body");
           });
       }
     });

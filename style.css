@@ -17,6 +17,11 @@ html {
 body {
   background-color: var(--color-back);
 }
+.body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 
 .window {
   width: 100%;
