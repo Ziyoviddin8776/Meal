@@ -41,7 +41,7 @@ let getAPI = function (meal) {
           let obj = arr.find(function (val) {
             return val.idMeal == elementId;
           });
-          document.querySelector(".general").style.top = `${k - 20}px`;
+          document.querySelector(".general").style.top = `${k}px`;
           document.querySelector(".general").style.display = "block";
           document.querySelector(".general").style.transform = "scale(1)";
           document.querySelector(".meal__name").textContent = obj.strMeal;
@@ -50,8 +50,7 @@ let getAPI = function (meal) {
           document.querySelector(".lorem").textContent = obj.strInstructions;
           document.querySelector(".imgcha").src = `${obj.strMealThumb}`;
           document.querySelector(".youtube").href = `${obj.strYoutube}`;
-          if (document.querySelector(".general").style.top == `${k - 20}px`) {
-            document.querySelector(".general").style.position = "fixed";
+          if (document.querySelector(".general").style.top == `${k}px`) {
           }
           // document.querySelector(".general").style.position = "absolute";
           // console.log(document.querySelector(".general").style.position);
