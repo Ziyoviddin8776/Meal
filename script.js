@@ -10,7 +10,7 @@ let renderHtml = function (data) {
   
     <button class="recipe--button">Get Recipe</button>
 </div>`;
-  document.querySelector(".flex").insertAdjacentHTML("beforeend", html);
+  document.querySelector(".flex").insertAdjacentHTML("afterbegin", html);
 };
 
 let renderModal = function () {};
@@ -21,6 +21,7 @@ let getAPI = function (meal) {
       return response.json();
     })
     .then(function (res) {
+      console.log(res);
       if (res.meals == null) {
         alert("Bunday taom bizning ruyhatda mavjud emas");
       } else {
